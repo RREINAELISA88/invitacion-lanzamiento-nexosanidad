@@ -125,11 +125,12 @@ ul li {
     text-decoration: none;
     display: inline-block;
     text-align: center;
+    width: 80%;
 }
 
 .btn-confirm {
     background: var(--azul-nexo);
-    color: white;
+    color: white !important;
 }
 
 .btn-confirm:hover {
@@ -176,7 +177,7 @@ footer a {
 
 <div class="invitation-card">
     <div class="logo-container">
-        <img src="/logo-nexosanidad-reclutamiento-sanitario.png.webp" alt="Logo NexoSanidad" class="logo-placeholder">
+        <img src="logo-nexosanidad-reclutamiento-sanitario.png.webp" alt="Logo NexoSanidad" class="logo-placeholder">
     </div>
 
     <div class="content">
@@ -195,17 +196,7 @@ footer a {
         <p>
             Te invitamos a ser parte del lanzamiento exclusivo de <strong>NexoSanidad</strong>,
             donde desvelaremos cómo estamos redefiniendo los nexos en el sector salud.
-            No será solo una presentación; será una <strong>experiencia multisensorial</strong>
-            diseñada para que sientas el cambio antes que el mercado.
         </p>
-
-        <p><strong>Por qué es importante que estés aquí:</strong></p>
-
-        <ul>
-            <li>Descubrirás el principio neurocientífico detrás de nuestra solución.</li>
-            <li>Conectarás con mentes pioneras que están dando forma al futuro del sector.</li>
-            <li>Serás parte de la primera comunidad que interactúa con nuestra plataforma.</li>
-        </ul>
 
         <div class="event-box">
             <div class="event-item">
@@ -218,24 +209,21 @@ footer a {
             </div>
             <div class="event-item">
                 <strong>Lugar</strong>
-                Àtic Coworking Business Center C/Balançó i Boter 22, Ático 2da plt. 08302, Mataró Barcelona
+                Àtic Coworking Business Center, Mataró
             </div>
         </div>
 
         <p>
             <strong>Confirmación esencial:</strong><br>
-            Tu lugar es reservado. Por favor, confirma tu asistencia antes del
-            <strong>28 de Enero</strong>.
+            Por favor, confirma tu asistencia antes del <strong>28 de Enero</strong>.
         </p>
 
         <div class="actions">
-            <!-- Botón para enviar correo -->
-            <a href="mailto:rodriguezrapaloreinaelisa@gmail.com?subject=Confirmación%20Asistencia%20Evento%20NexoSanidad" 
+            <a href="https://wa.me/34TUNUMERO?text=Hola!%20Confirmo%20mi%20asistencia%20al%20evento%20de%20NexoSanidad" 
                class="btn btn-confirm">
                Confirmar mi Asistencia
             </a>
 
-            <!-- Botón de recordatorio (descargar ICS) -->
             <button class="btn btn-reminder" onclick="descargarCalendario()">
                 🔔 Agendar Recordatorio (Alerta 48h)
             </button>
@@ -259,8 +247,8 @@ footer a {
 function descargarCalendario() {
     const titulo = "Lanzamiento NexoSanidad";
     const descripcion = "Recordatorio exclusivo para el evento de NexoSanidad";
-    const fechaInicio = "20240201T160000"; 
-    const fechaFin = "20240201T180000";
+    const fechaInicio = "20260201T160000"; 
+    const fechaFin = "20260201T180000";
 
     const icsContent = `BEGIN:VCALENDAR
 VERSION:2.0
@@ -272,7 +260,7 @@ DTEND:${fechaFin}
 BEGIN:VALARM
 TRIGGER:-PT48H
 ACTION:DISPLAY
-DESCRIPTION:Recordatorio NexoSanidad (Faltan 48h)
+DESCRIPTION:Recordatorio NexoSanidad
 END:VALARM
 END:VEVENT
 END:VCALENDAR`;
@@ -283,8 +271,6 @@ END:VCALENDAR`;
     a.href = url;
     a.download = 'recordatorio-nexosanidad.ics';
     a.click();
-    window.URL.revokeObjectURL(url);
-    alert("Se ha descargado el recordatorio. Ábrelo para añadirlo a tu calendario con la alerta de 48 horas.");
 }
 </script>
 
