@@ -77,17 +77,6 @@ p {
     color: var(--oscuro);
 }
 
-ul {
-    text-align: left;
-    margin: 20px auto;
-    padding-left: 20px;
-    max-width: 420px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
 .event-box {
     background: var(--gris-claro);
     border-radius: 20px;
@@ -125,7 +114,7 @@ ul li {
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    width: 80%;
+    width: 85%;
 }
 
 .btn-confirm {
@@ -144,11 +133,6 @@ ul li {
     color: var(--verde-nexo);
 }
 
-.btn-reminder:hover {
-    background: var(--verde-nexo);
-    color: white;
-}
-
 footer {
     background: var(--gris-claro);
     padding: 20px;
@@ -156,20 +140,8 @@ footer {
     color: #888;
 }
 
-footer a {
-    color: var(--azul-nexo);
-    text-decoration: none;
-    font-weight: 600;
-}
-
 @media (max-width: 480px) {
-    .content {
-        padding: 20px;
-    }
-    .event-box {
-        flex-direction: column;
-        text-align: center;
-    }
+    .event-box { flex-direction: column; }
 }
 </style>
 </head>
@@ -182,94 +154,56 @@ footer a {
 
     <div class="content">
         <span class="badge">INVITACIÓN EXCLUSIVA</span>
-
         <h1>Sé el primero en experimentar NexoSanidad</h1>
 
-        <p><strong>Estimado/a [Nombre / Colectivo],</strong></p>
-
         <p class="highlight">
-            Imagina un futuro donde la tecnología y el bienestar se unen de forma intuitiva,
-            anticipándose a las necesidades humanas.<br>
+            Imagina un futuro donde la tecnología y el bienestar se unen.<br>
             <strong>Ese futuro comienza ahora.</strong>
         </p>
 
-        <p>
-            Te invitamos a ser parte del lanzamiento exclusivo de <strong>NexoSanidad</strong>,
-            donde desvelaremos cómo estamos redefiniendo los nexos en el sector salud.
-        </p>
-
         <div class="event-box">
-            <div class="event-item">
-                <strong>Fecha</strong>
-                1 de Febrero
-            </div>
-            <div class="event-item">
-                <strong>Hora</strong>
-                16:00
-            </div>
-            <div class="event-item">
-                <strong>Lugar</strong>
-                Àtic Coworking Business Center, Mataró
-            </div>
+            <div class="event-item"><strong>Fecha</strong> 1 de Febrero</div>
+            <div class="event-item"><strong>Hora</strong> 16:00</div>
+            <div class="event-item"><strong>Lugar</strong> Mataró, Barcelona</div>
         </div>
 
-        <p>
-            <strong>Confirmación esencial:</strong><br>
-            Por favor, confirma tu asistencia antes del <strong>28 de Enero</strong>.
-        </p>
-
         <div class="actions">
-            <a href="https://wa.me/34TUNUMERO?text=Hola!%20Confirmo%20mi%20asistencia%20al%20evento%20de%20NexoSanidad" 
-               class="btn btn-confirm">
+            <a href="https://api.whatsapp.com/send?phone=34604870011&text=Hola!%20Confirmo%20mi%20asistencia%20al%20evento%20de%20NexoSanidad" 
+               class="btn btn-confirm" 
+               target="_blank">
                Confirmar mi Asistencia
             </a>
 
             <button class="btn btn-reminder" onclick="descargarCalendario()">
-                🔔 Agendar Recordatorio (Alerta 48h)
+                🔔 Agendar Recordatorio
             </button>
         </div>
-
-        <p style="margin-top:30px;">
-            Te esperamos para construir, juntos, los nuevos puentes de la sanidad.
-        </p>
-
-        <p><strong>Saludos cordiales,<br>El equipo de NexoSanidad</strong></p>
     </div>
 
     <footer>
-        <strong>NexoSanidad</strong> · 
-        <a href="#">Sitio Web</a> · 
-        <a href="#">Red Social</a>
+        <strong>NexoSanidad</strong> · 2026
     </footer>
 </div>
 
 <script>
 function descargarCalendario() {
     const titulo = "Lanzamiento NexoSanidad";
-    const descripcion = "Recordatorio exclusivo para el evento de NexoSanidad";
     const fechaInicio = "20260201T160000"; 
     const fechaFin = "20260201T180000";
-
     const icsContent = `BEGIN:VCALENDAR
 VERSION:2.0
 BEGIN:VEVENT
 SUMMARY:${titulo}
-DESCRIPTION:${descripcion}
 DTSTART:${fechaInicio}
 DTEND:${fechaFin}
-BEGIN:VALARM
-TRIGGER:-PT48H
-ACTION:DISPLAY
-DESCRIPTION:Recordatorio NexoSanidad
-END:VALARM
+DESCRIPTION:Lanzamiento NexoSanidad en Mataró
 END:VEVENT
 END:VCALENDAR`;
-
     const blob = new Blob([icsContent], { type: 'text/calendar' });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'recordatorio-nexosanidad.ics';
+    a.download = 'evento-nexosanidad.ics';
     a.click();
 }
 </script>
