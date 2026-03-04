@@ -1,292 +1,214 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Invitación Exclusiva | NexoSanidad</title>
+    <meta charset="UTF-8">
+    <title>Despacho Jurídico ABC | Abogada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-<style>
-:root {
-    --azul-nexo: #007bb6;
-    --verde-nexo: #28a745;
-    --oscuro: #1a2b3c;
-    --gris-claro: #f4f7f6;
-    --blanco: #ffffff;
-}
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #e0f2f1 0%, #ffffff 100%);
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: var(--oscuro);
-}
-
-.invitation-card {
-    background: var(--blanco);
-    width: 92%;
-    max-width: 560px;
-    border-radius: 30px;
-    box-shadow: 0 20px 40px rgba(0,0,0,.12);
-    overflow: hidden;
-    border-top: 10px solid var(--azul-nexo);
-    text-align: center;
-}
-
-.logo-container {
-    padding: 30px 20px 10px;
-}
-
-.logo-placeholder {
-    width: 180px;
-    max-width: 100%;
-}
-
-.content {
-    padding: 25px 40px 40px;
-}
-
-.badge {
-    background: var(--verde-nexo);
-    color: white;
-    padding: 6px 16px;
-    border-radius: 50px;
-    font-size: .75rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-h1 {
-    color: var(--azul-nexo);
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-p {
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.highlight {
-    font-style: italic;
-    color: var(--oscuro);
-}
-
-ul {
-    text-align: left;
-    margin: 20px auto;
-    padding-left: 20px;
-    max-width: 420px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-.event-box {
-    background: var(--gris-claro);
-    border-radius: 20px;
-    padding: 20px;
-    margin: 25px 0;
-    display: flex;
-    justify-content: space-around;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.event-item strong {
-    display: block;
-    color: var(--azul-nexo);
-    font-size: .8rem;
-    text-transform: uppercase;
-}
-
-.actions {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-}
-
-.btn {
-    padding: 15px 25px;
-    border-radius: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all .3s ease;
-    font-size: 1rem;
-    border: none;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    width: 80%;
-}
-
-.btn-confirm {
-    background: var(--azul-nexo);
-    color: white !important;
-}
-
-.btn-confirm:hover {
-    background: var(--oscuro);
-    transform: translateY(-2px);
-}
-
-.btn-reminder {
-    background: transparent;
-    border: 2px solid var(--verde-nexo);
-    color: var(--verde-nexo);
-}
-
-.btn-reminder:hover {
-    background: var(--verde-nexo);
-    color: white;
-}
-
-footer {
-    background: var(--gris-claro);
-    padding: 20px;
-    font-size: .85rem;
-    color: #888;
-}
-
-footer a {
-    color: var(--azul-nexo);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-@media (max-width: 480px) {
-    .content {
-        padding: 20px;
-    }
-    .event-box {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-</style>
 </head>
 
 <body>
 
-<div class="invitation-card">
-    <div class="logo-container">
-        <img src="logo-nexosanidad-reclutamiento-sanitario.png.webp" alt="Logo NexoSanidad" class="logo-placeholder">
-    </div>
+<nav>
 
-    <div class="content">
-        <span class="badge">INVITACIÓN EXCLUSIVA</span>
-
-        <h1>Sé el primero en experimentar NexoSanidad</h1>
-
-        <p><strong>Están invitados</strong></p>
-
-        <p class="highlight">
-            Imagina un futuro donde la tecnología y el bienestar se unen de forma intuitiva,
-            anticipándose a las necesidades humanas.<br>
-            <strong>Ese futuro comienza ahora.</strong>
-        </p>
-
-        <p>
-            Te invitamos a ser parte del <strong>lanzamiento exclusivo de NexoSanidad</strong>, donde
-            desvelaremos cómo estamos redefiniendo los nexos en el sector salud.
-            No será solo una presentación, sino una <strong>experiencia multisensorial</strong>
-            diseñada para que sientas el cambio antes que el mercado.
-        </p>
-
-        <h3 style="color:var(--azul-nexo); margin-top:25px;">
-            ¿Por qué es importante que estés aquí?
-        </h3>
-
-        <ul>
-            <li>Descubrirás el <strong>principio neurocientífico</strong> detrás de nuestra solución.</li>
-            <li>Conectarás con <strong>mentes pioneras</strong> que están dando forma al futuro del sector.</li>
-            <li>Serás parte de la <strong>primera comunidad</strong> que interactúa con nuestra plataforma.</li>
-        </ul>
-
-        <div class="event-box">
-            <div class="event-item">
-                <strong>Fecha</strong>
-                1 de Febrero
-            </div>
-            <div class="event-item">
-                <strong>Hora</strong>
-                14:00
-            </div>
-            <div class="event-item">
-                <strong>Lugar</strong>
-                Àtic Coworking Business Center C/Balancó i Boter 22,Ático (2a plt.) Mataró, Barcelona
-            </div>
-        </div>
-
-        <p>
-            <strong>Confirmación esencial:</strong><br>
-            Tu lugar está reservado. Por favor, confirma tu asistencia antes del
-            <strong>20 de Enero</strong>.
-        </p>
-
-        <div class="actions">
-            <a href="https://wa.me/34604870011?text=Hola!%20Confirmo%20mi%20asistencia%20al%20evento%20de%20NexoSanidad" 
-               class="btn btn-confirm">
-               Confirmar mi Asistencia
-            </a>
-
-            <button class="btn btn-reminder" onclick="descargarCalendario()">
-                🔔 Agendar Recordatorio (48h antes)
-            </button>
-        </div>
-
-        <p style="margin-top:30px;">
-            Te esperamos para construir, juntos, los nuevos puentes de la sanidad.
-        </p>
-
-        <p><strong>Saludos cordiales,<br>El equipo de NexoSanidad</strong></p>
-    </div>
-
-    <footer>
-        <strong>NexoSanidad</strong> · 
-        <a href="#">Sitio Web</a> · 
-        <a href="#">Red Social principal</a>
-    </footer>
+<div class="logo">
+<img src="/img/image.png">
 </div>
 
+<ul class="nav-links" id="navLinks">
+<li><a href="#nosotros">Sobre Mi</a></li>
+<li><a href="#areas">Áreas</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#contacto">Contacto</a></li>
+
+<li class="mobile-whatsapp">
+<a href="https://wa.me/50489192938">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+</li>
+</ul>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+
+</nav>
+
+    <section class="hero">
+    <div   class="hero-content">
+    <h1>DEFENSA LEGAL CON COMPROMISO Y EXCELENCIA</h1>
+    <p>Asesoramiento jurídico personalizado en Derecho Civil, Familiar, Penal y Laboral</p>
+     <a href="#contacto" class="btn">Solicitar Consulta</a>
+    </div>
+</section>
+
+<section class="valores">
+    <h2 class="title_valor">Nuestros Valores</h2>
+    <div class="grid-1">
+        <div>
+            <h3 class="tex_valor">Confidencialidad</h3>
+            <p class="text2-valor">Trato discreto y profesional.</p>
+        </div>
+        <div>
+            <h3 class="tex_valor">Atención Personalizada</h3>
+            <p class="text2-valor">Cada caso es único.</p>
+        </div>
+        <div>
+            <h3 class="tex_valor">Compromiso</h3>
+            <p class="text2-valor">Defensa firme y estratégica.</p>
+        </div>
+    </div>
+</section>
+
+<section id="nosotros" class="about">
+
+    <h2 class="about__title">Sobre Mí</h2>
+
+    <div class="about__container">
+
+        <div class="about__image">
+            <img src="/img/IMG-20251222-WA0001 (2).webp" 
+                 alt="Foto profesional" 
+                 class="about__photo">
+        </div>
+
+        <div class="about__content">
+            <p class="about__text">
+                Soy abogada especializada en derecho civil y familiar, comprometida con ofrecer asesoramiento jurídico cercano, transparente y eficaz.
+                Mi objetivo es defender los intereses de mis clientes con responsabilidad, estrategia y humanidad.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="areas">
+    <h2>Áreas de Práctica</h2>
+    <div class="grid">
+        <div class="card">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <h3>Derecho Civil</h3>
+            <p>Contratos, reclamaciones y responsabilidad civil.</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-people-group"></i>
+            <h3>Derecho Familiar</h3>
+            <p>Divorcios, custodia y pensiones.</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-gavel"></i>
+            <h3>Derecho Penal</h3>
+            <p>Defensa y acusación en procesos penales.</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-handshake"></i>
+            <h3>Derecho Laboral</h3>
+            <p>Despidos y reclamaciones salariales.</p>
+        </div>
+         <div class="card">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>Derecho Administrativo</h3>
+            <p>Despidos y reclamaciones salariales.</p>
+        </div>
+    </div>
+</section>
+
+<section id="servicios">
+    <h2>Servicios</h2>
+    <div class="grid">
+        <div class="card">
+            <i class="fa-solid fa-file-signature"></i>
+            <h3>Asesoramiento Legal</h3>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <h3>Representación Judicial</h3>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-file-contract"></i>
+            <h3>Redacción de Contratos</h3>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="contacto-section">
+
+  <h2 class="contact-title">Contacto</h2>
+  <p class="contact-subtitle">
+    ¿Tienes un proyecto o consulta legal? Escríbeme y te responderé lo antes posible ✨
+  </p>
+
+  <div class="contact-wrapper">
+
+    <!-- COLUMNA IZQUIERDA -->
+    <div class="contact-left">
+     
+
+      
+
+      <div class="contact-card">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <h4>Teléfono</h4>
+          <p>+34 657323964</p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <i class="fa-solid fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <p>correo@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMNA DERECHA -->
+    <div class="contact-right">
+      <form class="contact-form">
+        <div class="form-row">
+          <input type="text" placeholder="Nombre completo" required>
+          <input type="email" placeholder="Correo Electrónico" required>
+        </div>
+
+        <div class="form-row">
+          <input type="tel" placeholder="Teléfono" required>
+          <input type="text" placeholder="Asunto" required>
+        </div>
+
+        <textarea rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <button type="submit" class="btn">Enviar Mensaje</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-info">
+            <h3>Despacho Jurídico ABC</h3>
+            <p>Comprometidos con la justicia y la excelencia legal.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#nosotros">Sobre Mi</a>
+            <a href="#areas">Áreas</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2025 Despacho Jurídico ABC | Todos los derechos reservados
+    </div>
+</footer>
+
 <script>
-function descargarCalendario() {
-    const titulo = "Lanzamiento Exclusivo NexoSanidad";
-    const descripcion = "Evento exclusivo donde tecnología, neurociencia y sanidad se conectan.";
-    const fechaInicio = "20260201T160000";
-    const fechaFin = "20260201T180000";
-
-    const icsContent = `BEGIN:VCALENDAR
-VERSION:2.0
-BEGIN:VEVENT
-SUMMARY:${titulo}
-DESCRIPTION:${descripcion}
-DTSTART:${fechaInicio}
-DTEND:${fechaFin}
-BEGIN:VALARM
-TRIGGER:-PT48H
-ACTION:DISPLAY
-DESCRIPTION:Recordatorio evento NexoSanidad
-END:VALARM
-END:VEVENT
-END:VCALENDAR`;
-
-    const blob = new Blob([icsContent], { type: 'text/calendar' });
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'recordatorio-nexosanidad.ics';
-    a.click();
-}
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("active");
+    }
 </script>
 
 </body>
