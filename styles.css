@@ -497,12 +497,25 @@ RESPONSIVE
 
     .hero p {
         font-size: 16px;
+        
     }
 
     section {
         padding: 60px 20px;
     }
 
+#areas {
+    background: #ddd8d828;
+    margin:auto;
+    justify:content:center:
+}
+
+#servicios {
+    background: #ddd8d828;
+    margin:auto;
+    justify-content:center;
+}
+    
        .title_valor{
         font-size:24PX;
        }
